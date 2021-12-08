@@ -18,11 +18,11 @@ The aim of NMT is to output the best possible translation of a given input text.
 
 ## Aims
 
-In this project, we seek to:
+In this project, we:
 
-- Apply  several  classic  sampling methods (beam search, ancestral sampling, top-k sampling, and top-p sampling) to produce candidate translations for the MBR decoding algorithm 
+- Apply  several  classic  sampling methods (beam search, ancestral sampling, top-k sampling, and top-p sampling) to generate candidate translations for the MBR decoding algorithm 
 - Compare and contrast the performance of classic beam search and MBR decoding with different candidate generation methods
-- Provide a robust  characterization  of  the  biases  present in  each  method’s  selected  translations
+- Provide a robust  characterization  of  the  biases  present in  each  method’s  selected  translations (length bias and token frequency bias)
 
 
 
@@ -30,8 +30,8 @@ In this project, we seek to:
 
 The results of our project:
 
+- Suggest that classic beam search marginally outperforms all forms of MBR decoding in terms of BLEU score, length bias, and token frequency bias
 - Confirm  that  classic  beam  search  and  MBR decoding with all candidate generation methods explored exhibit length bias and token frequency bias
-- Suggest that classic beam search marginally outperforms all forms of MBR decoding  in  those  areas
 - Indicate that the direction and magnitude of length bias strongly correlates with the length of the reference sentence
 
 
@@ -68,7 +68,9 @@ This folder contains code files to reproduce results and analyses.
 
 ### ```results``` folder
 
-- ```candidate-and-sample-translations``` folder: Contains candidate translations and sample translations outputted by ```code/generate-candidates-and-samples.ipynb```. Each file contains a ```_c.txt``` counterpart, a reformatted version of the file required by the [mbr-nmt package](https://github.com/Roxot/mbr-nmt).
+This folder contains saved results.
+
+- ```candidate-and-sample-translations``` folder: Contains candidate translations and sample translations outputted by ```code/generate-candidates-and-samples.ipynb```. Each file contains a ```_c.txt``` counterpart, a reformatted version of the file used by the [mbr-nmt package](https://github.com/Roxot/mbr-nmt).
 
 - ```final-translations``` folder: Contains final translations from beam search decoding (```baseline_beam_X.txt``` files) and MBR decoding using various candidate generation methods (```samples_ancestral_n200_candidates_X.txt``` files). Output of ```code/mbr-decoding.ipynb```.
 
