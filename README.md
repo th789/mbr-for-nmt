@@ -28,7 +28,20 @@ In this project, we seek to:
 
 ## Results
 
+The results of our project:
+
+- Confirm  that  classic  beam  search  and  MBR decoding with all candidate generation methods explored exhibit length bias and token frequency bias
+- Suggest that classic beam search marginally outperforms all forms of MBR decoding  in  those  areas
+- Indicate that the direction and magnitude of length bias strongly correlates with the length of the reference sentence
+
 
 
 ## Repository description
+
+
+
+
+
+
+
 
