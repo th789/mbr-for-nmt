@@ -41,7 +41,7 @@ The results of our project:
 This repository contains the dataset used for the project, code to reproduce results and analyses, and saved results. Specifically, the repository contains the following folders and files:
 
 
-```dataset``` folder
+### ```dataset``` folder
 
 We use a subset of the English-French parallel corpus from the [Tatoeba Project](https://tatoeba.org/en), downloading the processed tab-delimited parallel corpus from http://www.manythings.org/anki/. The subset contains 2,500 English-French sentence pairs, randomly sampled from the top 5\% longest sentences in the full English-French parallel corpus. We sampled accordingly to upsample longer sentences in order to study length bias. In the subset, English sentence lengths range between 6-34 words, with an average of 12.48 words, and French sentence lengths range between 6-37 words, with an average of 13.22 words.
 
