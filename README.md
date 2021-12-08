@@ -51,8 +51,19 @@ We use a subset of the English-French parallel corpus from the [Tatoeba Project]
 
 
 
+### ```code``` folder
 
+This folder contains code files to reproduce results and analyses. 
 
+- ```generate-candidates-and-samples.ipynb```: Processes data. Generates candidate translations (via beam search, ancestral sampling, top-k sampling, and top-p sampling) and sample translations (via ancestral sampling) to be used in MBR decoding. Also performs beam search decoding as a baseline. Code outputs are stored in ```results/candidate-and-sample-translations```. Uses the [Unified Text-to-Text Transformer model (Raffel et al., 2020)](https://arxiv.org/abs/1910.10683) accessed through Hugging Face (call to model included in notebook).
+
+- ```mbr-decoding.ipynb```: Performs MBR decoding using candidate and sample translations outputted by generate-candidates-and-samples.ipynb. MBR decoding selects the best translation among the candidate translations. Code outputs are stored in results/final-translations. Uses the [mbr-nmt package](https://github.com/Roxot/mbr-nmt) by [Eikema and Aziz (2021)](https://arxiv.org/abs/2108.04718) (installation and runs included in notebook).
+
+- ```analysis-calculate-bleu-scores.ipynb```: Calculates BLEU scores for translations produced using beam search decoding and MBR decoding (using various candidate generation methods).
+
+- ```analysis-bleu-and-length-bias.ipynb```: Analyzes BLEU score performance and length bias in the translations produced by beam search decoding and MBR decoding (using various candidate generation methods).
+
+- ```analysis-token-frequency-bias.ipynb```: Analyzes token frequency bias in the translations produced by beam search decoding and MBR decoding (using various candidate generation methods).
 
 
 
