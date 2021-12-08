@@ -70,7 +70,7 @@ This folder contains code files to reproduce results and analyses.
 
 - ```candidate-and-sample-translations``` folder: Contains candidate translations and sample translations outputted by ```code/generate-candidates-and-samples.ipynb```. Each file contains a ```_c.txt``` counterpart, a reformatted version of the file required by the [mbr-nmt package](https://github.com/Roxot/mbr-nmt).
 
-- ```final-translations``` folder: Contains final translations from beam search decoding (```baseline_beam_X.txt``` files) and MBR decoding using various candidate generation methods (```samples_ancestral_n200_candidates_X.txt``` files) outputted by ```code/mbr-decoding.ipynb```.
+- ```final-translations``` folder: Contains final translations from beam search decoding (```baseline_beam_X.txt``` files) and MBR decoding using various candidate generation methods (```samples_ancestral_n200_candidates_X.txt``` files). Output of ```code/mbr-decoding.ipynb```.
 
 
 
