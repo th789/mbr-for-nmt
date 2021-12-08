@@ -8,6 +8,7 @@ This repository contains the dataset used for the project, code to reproduce res
 
 ## Motivation
 
+The aim of NMT is to output the best possible translation of a given input text.  Given a trained model, this has  historically  been  accomplished  through maximum a posteriori (MAP) decoding, which seeks  to find  the  mode of  the  generated conditional  distribution  over  all  possible  output sequences.  However, recent work has shown that  MAP  decoding  may  not  be  the  optimal decoding  rule.    A  new  approach,  known  as MBR decoding, shows promise  in  addressing  the  shortcomings  of MAP  decoding,  though  it  has  not  yet  been shown  to  fix  length  bias  and  token  probability  bias.  
 
 ## Aims
 
